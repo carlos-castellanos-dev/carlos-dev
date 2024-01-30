@@ -28,7 +28,7 @@ function Hero() {
                     <div className="content">
                         <div className="hero-main">
                             <div className="hero-text">
-                                <h1>RIX Developer</h1>
+                                <h1>Software Developer</h1>
                                 <p>
                                     Hi, I'm Carlos Castellanos. A passionate Software Developer based in Hollywood, Florida. 📍
                                 </p>
