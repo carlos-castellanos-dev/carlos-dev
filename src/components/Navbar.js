@@ -27,6 +27,10 @@ function Navbar() {
             link: "#projects",
         },
         {
+            name: "Skills",
+            link: "#skills",
+        },
+        {
             name: "Contact",
             link: "#contact",
         },
