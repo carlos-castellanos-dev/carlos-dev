@@ -24,7 +24,7 @@ function AboutMe() {
                                 Hi, my name is Carlos, and I'm a Software Developer with a background in web design, client-server applications, and software development cycles with a focus on frontend.
                                 <br />
                                 <br />
-                                Previously I was postioned as a Junior Software & Data Integration Engineer at BetterNOI utilizing Python, Javascript,  and SQL.
+                                Previously I was postioned as a Junior Software & Data Integration Engineer at BetterNOI utilizing Python, Django, Javascript, and SQL.
                             </p>
                         </div>
                     </div>
