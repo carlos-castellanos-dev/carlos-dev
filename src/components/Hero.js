@@ -1,5 +1,4 @@
 import "./css/App.css";
-import Waving from "../images/waving.png";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 const skillsIcons = [
@@ -30,7 +29,6 @@ function Hero() {
                         <div className="hero-main">
                             <div className="hero-text">
                                 <h1>Software Developer</h1>
-                                {/* <img src={Waving} alt="waving_hand" /> */}
                                 <p>
                                     Hi, I'm Carlos Castellanos. A passionate Software Developer based in Hollywood, Florida. 📍
                                 </p>
