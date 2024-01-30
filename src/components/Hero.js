@@ -30,7 +30,7 @@ function Hero() {
                             <div className="hero-text">
                                 <h1>Software Developer</h1>
                                 <p>
-                                    Hi, I'm Carlos Castellanos. A passionate Software Developer based in Hollywood, Florida. 📍
+                                    Hi, I'm Carlos Castellanos. A passionate Software Developer based in Hollywood, Florida. TEST 📍
                                 </p>
                                 <span>
                                     <a
