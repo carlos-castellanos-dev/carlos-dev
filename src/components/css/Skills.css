@@ -1,0 +1,70 @@
+.logo {
+    cursor: pointer;
+    color: #2d2e32;
+}
+
+.skills {
+    display: flex;
+    font-size: 1.7rem;
+    color: #767676;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.skills p {
+    margin-right: 7rem;
+    padding-right: 2rem;
+    border-right: 2px solid rgba(45, 46, 50, 0.5);
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    color: #2d2e32;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.skills ul li {
+    cursor: pointer;
+}
+
+.skills ul li img {
+    width: 11rem;
+    height: 5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.skills ul li img:hover {
+    transform: translateY(-1rem);
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    .skills {
+        position: initial;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills p {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills ul {
+        justify-content: center;
+    }
+}

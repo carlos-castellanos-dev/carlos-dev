@@ -1,3 +1,4 @@
+import "./css/Projects.css";
 // import Gymate from "../images/gymate-home.webp";
 // import Raouf from "../images/ecom.webp";
 // import ProBox from "./ProBox";
@@ -5,11 +6,11 @@
 // import CoinDom from "../images/coindom-full.png";
 
 function Projects() {
-    return (
-        <>
-            <section id="projects" className="project">
-                <div className="container">
-                    {/* <div className="project-content">
+  return (
+    <>
+      <section id="projects" className="project">
+        <div className="container">
+          {/* <div className="project-content">
               <p>portfolio</p>
               <h3>Each project is a unique piece of development 🧩</h3>
               <div className="projects-grid">
@@ -68,11 +69,11 @@ function Projects() {
                 />
               </div>
             </div> */}
-                    <h2 className="new-projects">New projects coming soon.. 🤠</h2>
-                </div>
-            </section>
-        </>
-    );
+          <h2 className="new-projects">New projects coming soon.. 🤠</h2>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default Projects;

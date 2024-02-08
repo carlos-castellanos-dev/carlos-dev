@@ -1,4 +1,5 @@
-import "./css/App.css";
+import "./css/Hero.css";
+import "./css/Skills.css";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 const skillsIcons = [
@@ -58,7 +59,7 @@ function Hero() {
                         {/*  */}
                         <div className="skills">
                             <p>Tech Stack</p>
-                            <div className="logos">
+                            <div className="logo">
                                 <ul>
                                     {skillsIcons.map((icon) => (
                                         <li key={icon.id}>

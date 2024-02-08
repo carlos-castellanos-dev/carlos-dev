@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./css/App.css";
+import "./css/Navbar.css";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
 function Navbar() {

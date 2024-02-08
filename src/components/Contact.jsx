@@ -1,3 +1,4 @@
+import "./css/Contact.css";
 import { IconMail, IconMapSearch } from "@tabler/icons-react";
 
 function Contact() {
