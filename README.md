@@ -15,7 +15,7 @@ Hi! My name is Carlos Castellanos 😄
   <a href="https://www.linkedin.com/in/castellanosc/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <a href="https://www.carloscdev.com/" style="margin-left: 10px">
+  <a href="https://www.carloscdev.com/" style="margin-left: 10px;">
     <img src="https://img.shields.io/badge/CarloscDev.com-blue?style=for-the-badge" alt="LinkedIn Badge"/>
   </a>
 </div>
