@@ -7,9 +7,9 @@ function Footer() {
             <footer>
                 <div className="container">
                     <div className="footerc">
-                        <h3>
-                            Copyright © {new Date().getFullYear()}. All rights are reserved
-                        </h3>
+                        <h4>
+                            Copyright © {new Date().getFullYear()} Carlos Castellanos. All Rights Reserved.
+                        </h4>
                         <div className="footerc__socials">
                             <a
                                 aria-label="linkedin"
