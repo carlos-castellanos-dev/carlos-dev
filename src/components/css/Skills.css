@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
 }
 
@@ -37,6 +37,10 @@
     display: flex;
 }
 
+.skills-main ul li img:hover {
+    transform: translateY(-1rem);
+}
+
 .logo {
     cursor: pointer;
     color: #2d2e32;
@@ -47,6 +51,9 @@
     white-space: nowrap;
     position: relative;
     width: 50vw;
+    display: flex;
+    align-items: center;
+    height: 100px;
 }
 
 .logos-slide {
@@ -54,9 +61,9 @@
     animation: 30s slide infinite linear;
 }
 
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
     animation-play-state: paused;
-}
+} */
 
 .logos-slide img {
     margin: 0 20px;
@@ -69,5 +76,15 @@
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-main {
+        flex-direction: column;
+    }
+
+    .logos {
+        width: 80vw;
     }
 }
