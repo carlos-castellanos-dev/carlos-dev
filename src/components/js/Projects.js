@@ -1,4 +1,4 @@
-import "./css/Projects.css";
+import "../css/Projects.css";
 // import Gymate from "../images/gymate-home.webp";
 // import Raouf from "../images/ecom.webp";
 // import ProBox from "./ProBox";

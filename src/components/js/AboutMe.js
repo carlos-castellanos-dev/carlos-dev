@@ -1,4 +1,4 @@
-import "./css/AboutMe.css";
+import "../css/AboutMe.css";
 import AboutImg from "../images/about-img.webp";
 import RoundedText from "../images/text2.svg";
 import WorkingEmoji from "../images/working-emoji.jpg";

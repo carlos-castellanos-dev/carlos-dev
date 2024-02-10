@@ -76,7 +76,7 @@
 }
 
 .hero-img {
-    background-image: url("/src/images/Headshot.jpg");
+    background-image: url("/src/components/images/Headshot.jpg");
     width: 35rem;
     height: 35rem;
     background-size: cover;

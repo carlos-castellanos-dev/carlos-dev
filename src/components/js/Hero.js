@@ -1,4 +1,4 @@
-import "./css/Hero.css";
+import "../css/Hero.css";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 function Hero() {
