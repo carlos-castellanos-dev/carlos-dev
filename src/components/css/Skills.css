@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 20vh;
     position: relative;
 }
 
@@ -35,6 +35,7 @@
 .skills-main ul {
     list-style: none;
     display: flex;
+    padding-left: 0 !important;
 }
 
 .skills-main ul li img:hover {
@@ -58,7 +59,7 @@
 
 .logos-slide {
     display: inline-block;
-    animation: 30s slide infinite linear;
+    animation: 10s slide infinite linear;
 }
 
 /* .logos:hover .logos-slide {
