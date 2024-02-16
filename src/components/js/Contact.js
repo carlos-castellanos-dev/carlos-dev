@@ -4,9 +4,31 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
+import Modal from 'react-bootstrap/Modal';
 import { IconMail, IconMapSearch, IconBrandLinkedin, IconSend, IconExclamationCircle } from "@tabler/icons-react";
 
+function LocationModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter" className="fs-3">
+                    Location
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114714.09559808583!2d-80.25777950340785!3d26.039592528405176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a96fc7ff31a7%3A0x7d77abe75b7b868!2sHollywood%2C%20FL!5e0!3m2!1sen!2sus!4v1708060161487!5m2!1sen!2sus" title="location" width="100%" height="450" loading="lazy"></iframe>
+            </Modal.Body>
+        </Modal>
+    );
+}
+
 function Contact() {
+    const [modalShow, setModalShow] = useState(false);
     const {
         register,
         handleSubmit,
@@ -78,17 +100,21 @@ function Contact() {
                         </div>
                         <div className="contact__icons">
                             <div className="contact__icon-box">
-                                <span>
+                                <span onClick={() => setModalShow(true)}>
                                     <IconMapSearch width={30} height={30} />
                                 </span>
                                 <div className="contact__info">
                                     <h3>Location</h3>
-                                    <p>Hollywood, Florida</p>
+                                    <button className="location-btn" onClick={() => setModalShow(true)}>Hollywood, Florida</button>
+                                    <LocationModal
+                                        show={modalShow}
+                                        onHide={() => setModalShow(false)}
+                                    />
                                 </div>
                             </div>
 
                             <div className="contact__icon-box">
-                                <span>
+                                <span onClick={() => { window.location = 'mailto:castellanosc0520@gmail.com' }}>
                                     <IconMail width={30} height={30} />
                                 </span>
                                 <div className="contact__info">
@@ -100,12 +126,12 @@ function Contact() {
                             </div>
 
                             <div className="contact__icon-box">
-                                <span>
+                                <span onClick={() => { window.open("https://www.linkedin.com/in/castellanosc/", "_blank") }}>
                                     <IconBrandLinkedin width={30} height={30} />
                                 </span>
                                 <div className="contact__info">
                                     <h3>Linkedin</h3>
-                                    <a href="https://www.linkedin.com/in/castellanosc/">
+                                    <a href="https://www.linkedin.com/in/castellanosc/" target="_blank" rel="noreferrer">
                                         in/castellanosc
                                     </a>
                                 </div>
@@ -206,7 +232,7 @@ function Contact() {
                         </section>
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     );
 }
