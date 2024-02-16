@@ -60,6 +60,7 @@
 .logos-slide {
     display: inline-block;
     animation: 10s slide infinite linear;
+    -webkit-animation: 10s slide infinite linear;
 }
 
 /* .logos:hover .logos-slide {
