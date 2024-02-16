@@ -17,7 +17,7 @@ function AboutMe() {
                             </span>
                         </div>
                         <div className="text-side">
-                            <h3>About me Test</h3>
+                            <h3>About me</h3>
                             <h4>
                                 Software Developer  <br /> based in Hollywood, Florida 📍
                             </h4>
