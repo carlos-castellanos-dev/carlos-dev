@@ -15,11 +15,11 @@ function Skills() {
             id: 3,
         },
         {
-            img: "https://skillicons.dev/icons?i=bootstrap",
+            img: "https://skillicons.dev/icons?i=jquery",
             id: 4,
         },
         {
-            img: "https://skillicons.dev/icons?i=react",
+            img: "https://skillicons.dev/icons?i=bootstrap",
             id: 5,
         },
         {
@@ -27,20 +27,36 @@ function Skills() {
             id: 6,
         },
         {
-            img: "https://skillicons.dev/icons?i=django",
+            img: "https://skillicons.dev/icons?i=tailwind",
             id: 7,
         },
         {
-            img: "https://skillicons.dev/icons?i=jquery",
+            img: "https://skillicons.dev/icons?i=react",
             id: 8,
         },
         {
-            img: "https://skillicons.dev/icons?i=mysql",
+            img: "https://skillicons.dev/icons?i=nodejs",
             id: 9,
         },
         {
-            img: "https://skillicons.dev/icons?i=nodejs",
+            img: "https://skillicons.dev/icons?i=py",
             id: 10,
+        },
+        {
+            img: "https://skillicons.dev/icons?i=django",
+            id: 11,
+        },
+        {
+            img: "https://skillicons.dev/icons?i=mysql",
+            id: 12,
+        },
+        {
+            img: "https://skillicons.dev/icons?i=cpp",
+            id: 13,
+        },
+        {
+            img: "https://skillicons.dev/icons?i=sentry",
+            id: 14,
         },
     ];
     return (

@@ -6,7 +6,7 @@ import WorkingEmoji from "../images/working-emoji.jpg";
 function AboutMe() {
     return (
         <>
-            <section className="about" id="about">
+            <section id="about" className="about">
                 <div className="container">
                     <div className="about-content">
                         <div className="img-side">
