@@ -80,6 +80,16 @@
     }
 }
 
+@-webkit-keyframes slide {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
 @media (max-width: 900px) {
     .skills-main {
         flex-direction: column;
