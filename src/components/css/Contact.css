@@ -48,6 +48,11 @@
     color: #147efb;
 }
 
+.contact__icon-box span :hover {
+    cursor: pointer;
+    color: #767676;
+}
+
 .contact__info {
     display: flex;
     flex-direction: column;
@@ -67,13 +72,18 @@
     cursor: pointer;
 }
 
-.contact__info a:hover {
+.contact__info a:hover,
+.location-btn:hover {
     color: #147efb;
     transition: all 0.3s;
 }
 
-.contact__info p:hover {
-    cursor: default;
+.location-btn {
+    text-decoration: none;
+    color: #767676;
+    background: none !important;
+    border: none;
+    font-size: 1.7rem;
 }
 
 /* Contact Form */
