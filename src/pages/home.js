@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/js/Navbar";
+import Resume from "../components/js/Resume";
 import Hero from "../components/js/Hero";
 import Skills from "../components/js/Skills";
 import AboutMe from "../components/js/AboutMe";
@@ -11,6 +12,7 @@ function Home() {
     return (
         <>
             <Navbar />
+            <Resume />
             <Hero />
             <Skills />
             <AboutMe />
