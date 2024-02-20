@@ -63,10 +63,6 @@
     -webkit-animation: 10s 1s slide infinite linear;
 }
 
-/* .logos:hover .logos-slide {
-    animation-play-state: paused;
-} */
-
 .logos-slide img {
     margin: 0 20px;
 }
