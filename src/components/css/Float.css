@@ -1,4 +1,4 @@
-.ck-hub {
+.float-hub {
     background-color: #fff;
     position: fixed !important;
     bottom: 0;
@@ -10,6 +10,8 @@
 
 .resume-btn {
     position: absolute;
+    text-align: center;
+    color: #147efb;
     border-style: solid;
     bottom: 20px;
     left: 20px;
@@ -22,6 +24,10 @@
 
 .resume-btn:hover {
     animation: heartbeat 1s infinite;
+}
+
+.float-icon {
+    margin-top: 2px;
 }
 
 @keyframes jittery {

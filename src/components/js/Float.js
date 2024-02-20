@@ -6,14 +6,14 @@ function Float() {
     const location = useLocation();
     return (
         <>
-            <aside id="float" className="ck-hub">
+            <aside id="float" className="float-hub">
                 {location.pathname === "/" ?
-                    <Link to='/Resume'>
-                        <button className="resume-btn" type="button"><IconFileCv size={40} stroke={1.5} /></button>
+                    <Link className="resume-btn" to='/Resume'>
+                        <IconFileCv className='float-icon' size={40} stroke={1.5} />
                     </Link>
                     :
-                    <Link to='/'>
-                        <button className="resume-btn" type="button"><IconHome size={40} stroke={1.5} /></button>
+                    <Link className="resume-btn" to='/'>
+                        <IconHome className='float-icon' size={40} stroke={1.5} />
                     </Link>
                 }
             </aside>
