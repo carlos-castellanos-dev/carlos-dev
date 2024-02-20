@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import "../css/Navbar.css";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(false);
+    const location = useLocation();
 
     const hamburgerMenu = () => {
         setHamburger(!hamburger);
@@ -13,10 +15,15 @@ function Navbar() {
         window.scrollTo({ top: (0, 0), behavior: "smooth" });
     };
 
-    const navlinks = [
+    const navlinks = () => {
+        return location.pathname !== '/Resume' ? homelinks : resumelinks;
+    }
+
+    const homelinks = [
         {
             name: "Home",
-            link: "#home",
+            link: "/",
+            color: "#147efb"
         },
         {
             name: "About",
@@ -30,8 +37,37 @@ function Navbar() {
             name: "Contact",
             link: "#contact",
         },
+        {
+            name: "Resume",
+            link: "Resume",
+        },
     ];
 
+    const resumelinks = [
+        {
+            name: "Home",
+            link: "/",
+        },
+        {
+            name: "Experience",
+            link: "#experience",
+
+        },
+        {
+            name: "Testimonials",
+            link: "#testimonials",
+        },
+        {
+            name: "Skills",
+            link: "#skills",
+
+        },
+        {
+            name: "Resume",
+            link: "Resume",
+            color: "#147efb"
+        },
+    ];
     return (
         <>
             <nav>
@@ -39,9 +75,9 @@ function Navbar() {
                     CARLOSC.DEV
                 </h3>
                 <ul>
-                    {navlinks.map((item) => (
+                    {navlinks(location.pathname).map((item) => (
                         <li key={item.name}>
-                            <a href={item.link}>{item.name}</a>
+                            <a href={item.link} style={{ color: item.color }} >{item.name}</a>
                         </li>
                     ))}
                     <li onClick={() => hamburgerMenu()}>
@@ -57,9 +93,9 @@ function Navbar() {
                 </span>
 
                 <ul>
-                    {navlinks.map((item) => (
+                    {navlinks(location.pathname).map((item) => (
                         <li key={item.name} onClick={() => hamburgerMenu()}>
-                            <a href={item.link}>{item.name}</a>
+                            <a href={item.link} style={{ color: item.color }} >{item.name}</a>
                         </li>
                     ))}
                 </ul>
