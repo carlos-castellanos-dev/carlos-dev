@@ -3,9 +3,8 @@ import Navbar from "../components/js/Navbar";
 import Float from "../components/js/Float";
 import Hero from "../components/js/Hero";
 import Skills from "../components/js/Skills";
+import Experience from "../components/js/Experience";
 import Footer from "../components/js/Footer";
-
-
 
 function Resume() {
     return (
@@ -14,6 +13,7 @@ function Resume() {
             <Float />
             <Hero />
             <Skills />
+            <Experience />
             <Footer />
         </>
     );
