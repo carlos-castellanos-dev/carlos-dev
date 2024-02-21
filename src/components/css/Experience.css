@@ -1,0 +1,140 @@
+.experience {
+    background-color: white;
+    padding: 10rem 0;
+}
+
+.experience-text h4 {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+    color: #2d2e32;
+}
+
+.experience-text h3 {
+    font-size: 1.7rem;
+    color: #147efb;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.experience-text p {
+    font-size: 1.7rem;
+    font-family: "Mulish", sans-serif;
+    color: #767676;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.big-icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    border: 1px solid #f9f9f9;
+}
+
+.emoji {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 50%;
+}
+
+.name {
+    margin-right: 15px;
+    padding-right: 2rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    color: #2d2e32;
+}
+
+.resume-items .resume-item:first-child {
+    padding-top: 0;
+}
+
+.resume-items .resume-item:last-child {
+    padding-bottom: 0;
+    margin-top: -1px;
+}
+
+.resume-items .resume-item:last-child:before {
+    display: none;
+}
+
+.resume-items .resume-item {
+    position: relative;
+    padding: 0 30px 60px;
+}
+
+.resume-items .resume-item:before {
+    background: #147efb;
+}
+
+.resume-items .resume-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.resume-items .resume-item .date {
+    color: #147efb;
+    border-color: #147efb;
+}
+
+.resume-items .resume-item .date {
+    position: relative;
+    top: -10px;
+    margin: 0 0 5px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 11px;
+    border: 1px solid #147efb;
+}
+
+.resume-items .resume-item .date:before {
+    background: #147efb;
+}
+
+.resume-items .resume-item .date:before {
+    content: "";
+    width: 29px;
+    height: 1px;
+    position: absolute;
+    left: -30px;
+    top: 9px;
+}
+
+.resume-items .resume-item .name {
+    font-weight: 500;
+    color: #141414;
+    margin: 0 0 15px;
+}
+
+@media (max-width: 768px) {
+    .experience-items {
+        flex-direction: column;
+    }
+
+    .col.col-md:first-child {
+        margin-bottom: 100px;
+    }
+}
