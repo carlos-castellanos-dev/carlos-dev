@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebbe93d6.css",
-    "main.js": "/static/js/main.a0b1d046.js",
+    "main.css": "/static/css/main.7c24d542.css",
+    "main.js": "/static/js/main.543d9e71.js",
     "static/media/Headshot.jpg": "/static/media/Headshot.f58d9f5ea467b8dcb18e.jpg",
     "static/media/about-img.webp": "/static/media/about-img.62b47e7f183d4b4e9feb.webp",
+    "static/media/briefcase-emoji.png": "/static/media/briefcase-emoji.b830594989972ca448d1.png",
+    "static/media/graduation-emoji.png": "/static/media/graduation-emoji.2d226cb14a9524d5b995.png",
     "static/media/working-emoji.jpg": "/static/media/working-emoji.63dae51424112b7b0f3f.jpg",
     "index.html": "/index.html",
     "static/media/text2.svg": "/static/media/text2.edd670e17d25196d968c658c1cc7739f.svg",
-    "main.ebbe93d6.css.map": "/static/css/main.ebbe93d6.css.map",
-    "main.a0b1d046.js.map": "/static/js/main.a0b1d046.js.map"
+    "main.7c24d542.css.map": "/static/css/main.7c24d542.css.map",
+    "main.543d9e71.js.map": "/static/js/main.543d9e71.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebbe93d6.css",
-    "static/js/main.a0b1d046.js"
+    "static/css/main.7c24d542.css",
+    "static/js/main.543d9e71.js"
   ]
 }
