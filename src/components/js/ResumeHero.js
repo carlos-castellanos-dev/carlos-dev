@@ -36,7 +36,7 @@ function ResumeHero() {
                                         <IconBrandGithub width={32} height={32} />
                                     </a>
                                 </span>
-                                <a href={Resume} download="Carlos Castellanos Resume" target='_blank'>
+                                <a href={Resume} download="Carlos Castellanos Resume" target='_blank' rel="noreferrer">
                                     <Button className='download-btn' variant="primary">Download Resume <IconDownload className="download-icon" width={16} height={16} stroke={4} /></Button>{' '}
                                 </a>
                             </div>
