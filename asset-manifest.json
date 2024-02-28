@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c24d542.css",
-    "main.js": "/static/js/main.543d9e71.js",
+    "main.css": "/static/css/main.d42398a9.css",
+    "main.js": "/static/js/main.ae57bf0b.js",
     "static/media/Headshot.jpg": "/static/media/Headshot.f58d9f5ea467b8dcb18e.jpg",
     "static/media/about-img.webp": "/static/media/about-img.62b47e7f183d4b4e9feb.webp",
+    "static/media/Carlos-Castellanos-Resume.pdf": "/static/media/Carlos-Castellanos-Resume.9b44514203f54d46b727.pdf",
+    "static/media/page.png": "/static/media/page.bf9680fb12a69d35b398.png",
     "static/media/briefcase-emoji.png": "/static/media/briefcase-emoji.b830594989972ca448d1.png",
     "static/media/graduation-emoji.png": "/static/media/graduation-emoji.2d226cb14a9524d5b995.png",
     "static/media/working-emoji.jpg": "/static/media/working-emoji.63dae51424112b7b0f3f.jpg",
     "index.html": "/index.html",
     "static/media/text2.svg": "/static/media/text2.edd670e17d25196d968c658c1cc7739f.svg",
-    "main.7c24d542.css.map": "/static/css/main.7c24d542.css.map",
-    "main.543d9e71.js.map": "/static/js/main.543d9e71.js.map"
+    "main.d42398a9.css.map": "/static/css/main.d42398a9.css.map",
+    "main.ae57bf0b.js.map": "/static/js/main.ae57bf0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c24d542.css",
-    "static/js/main.543d9e71.js"
+    "static/css/main.d42398a9.css",
+    "static/js/main.ae57bf0b.js"
   ]
 }
