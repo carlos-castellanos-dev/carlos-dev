@@ -57,7 +57,7 @@ function ResumeHero() {
                                         <Card.Body>
                                             See what others have to say about me!
                                             <br />
-                                            <Card.Link href="#" className='stretched-link'>Testimonials <IconArrowNarrowRight size={25} /></Card.Link>
+                                            <Card.Link href="#testimonials" className='stretched-link'>Testimonials <IconArrowNarrowRight size={25} /></Card.Link>
                                         </Card.Body>
                                     </Card>
                                 </div>
