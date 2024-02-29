@@ -23,9 +23,6 @@
     font-size: 12px;
 }
 
-/*=================================================================*/
-/*                      TESTIMONIALS                              
-/*=================================================================*/
 .testimonials-wrapper {
     max-width: 700px;
     margin: auto;
@@ -33,39 +30,37 @@
 
 .testimonial-item {
     padding: 0 20px 20px;
-
-    .thumb {
-        border-radius: 50%;
-        overflow: hidden;
-        height: 90px;
-        width: 90px;
-    }
-
-    .subtitle {
-        color: #147efb;
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 16px;
-        font-family: "Mulish", sans-serif;
-        color: #555555;
-    }
 }
 
-.triangle-top {
-    &:before {
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #FFF;
-        position: absolute;
-        left: 50%;
-        top: -10px;
-        transform: translateX(-7.5px)
-    }
+.testimonial-item p {
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    color: #555555;
+}
+
+.thumb {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 90px;
+    width: 90px;
+}
+
+.subtitle {
+    color: #147efb;
+    font-size: 14px;
+}
+
+.triangle-top:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-7.5px)
 }
 
 .slick-dots li.slick-active button:before {
