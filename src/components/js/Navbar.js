@@ -59,7 +59,7 @@ function Navbar() {
         },
         {
             name: "Skills",
-            link: "#skills",
+            link: "#rskill",
 
         },
         {

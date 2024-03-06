@@ -81,7 +81,7 @@
     justify-content: center;
 }
 
-.card {
+.card-nav {
     border-radius: 25px;
     border-color: #fff;
     background-color: #fff;
@@ -89,7 +89,7 @@
     max-width: 200px;
 }
 
-.card:hover {
+.card-nav:hover {
     border-color: #147efb;
 }
 
@@ -99,7 +99,7 @@
     border-radius: 5%;
 }
 
-.card a {
+.card-nav a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 700;
@@ -108,11 +108,11 @@
     line-height: 1.6;
 }
 
-.card a:hover {
+.card-nav a:hover {
     color: #555555;
 }
 
-.card-body {
+.resume-card-body {
     font-weight: 600;
     font-size: x-small;
 }
