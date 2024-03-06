@@ -42,9 +42,9 @@ function ResumeHero() {
                             </div>
                             <div className="row">
                                 <div className="resume-card col-lg-4 col-md-4 mb-lg-0 mb-4">
-                                    <Card>
+                                    <Card className="card-nav">
                                         <div className="land-icon"><IconBriefcase size={70} /></div>
-                                        <Card.Body>
+                                        <Card.Body className="resume-card-body">
                                             Learn more about my experience & education!
                                             <br />
                                             <Card.Link href="#experience" className='stretched-link'>Background <IconArrowNarrowRight size={25} /></Card.Link>
@@ -52,9 +52,9 @@ function ResumeHero() {
                                     </Card>
                                 </div>
                                 <div className="resume-card col-lg-4 col-md-4 mb-lg-0 mb-4">
-                                    <Card>
+                                    <Card className="card-nav">
                                         <div className="land-icon"><IconThumbUp size={70} /></div>
-                                        <Card.Body>
+                                        <Card.Body className="resume-card-body">
                                             See what others have to say about me!
                                             <br />
                                             <Card.Link href="#testimonials" className='stretched-link'>Testimonials <IconArrowNarrowRight size={25} /></Card.Link>
@@ -62,12 +62,12 @@ function ResumeHero() {
                                     </Card>
                                 </div>
                                 <div className="resume-card col-lg-4 col-md-4 mb-lg-0 mb-4">
-                                    <Card>
+                                    <Card className="card-nav">
                                         <div className="land-icon"><IconTools size={70} /></div>
-                                        <Card.Body>
+                                        <Card.Body className="resume-card-body">
                                             Learn more about my technical & soft skills!
                                             <br />
-                                            <Card.Link href="#" className='stretched-link'>Skills <IconArrowNarrowRight size={25} /></Card.Link>
+                                            <Card.Link href="#rskill" className='stretched-link'>Skills <IconArrowNarrowRight size={25} /></Card.Link>
                                         </Card.Body>
                                     </Card>
                                 </div>

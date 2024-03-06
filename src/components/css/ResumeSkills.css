@@ -1,0 +1,49 @@
+.skill-icon {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.skill-header p {
+    font-size: 1.7rem;
+    color: #147efb;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.skill-content h4 {
+    color: #147efb;
+    margin-top: 20px;
+}
+
+.skill-content h4:after {
+    content: "";
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+    border-bottom: 1px solid #767676;
+}
+
+.skill-content h2 {
+    margin-bottom: 20px;
+}
+
+.skill-content li {
+    font-size: 1.7rem;
+    font-family: "Mulish", sans-serif;
+    color: #767676;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.skill-content li::marker {
+    color: #147efb;
+}
+
+.skill-content ul {
+    list-style-type: circle;
+}
