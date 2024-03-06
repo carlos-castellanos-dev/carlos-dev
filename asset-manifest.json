@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f424bb7.css",
-    "main.js": "/static/js/main.573a2698.js",
+    "main.css": "/static/css/main.0a424e1f.css",
+    "main.js": "/static/js/main.bdb80467.js",
     "static/media/Headshot.jpg": "/static/media/Headshot.f58d9f5ea467b8dcb18e.jpg",
     "static/media/about-img.webp": "/static/media/about-img.62b47e7f183d4b4e9feb.webp",
     "static/media/Carlos-Castellanos-Resume.pdf": "/static/media/Carlos-Castellanos-Resume.9b44514203f54d46b727.pdf",
@@ -15,11 +15,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/text2.svg": "/static/media/text2.edd670e17d25196d968c658c1cc7739f.svg",
-    "main.0f424bb7.css.map": "/static/css/main.0f424bb7.css.map",
-    "main.573a2698.js.map": "/static/js/main.573a2698.js.map"
+    "main.0a424e1f.css.map": "/static/css/main.0a424e1f.css.map",
+    "main.bdb80467.js.map": "/static/js/main.bdb80467.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f424bb7.css",
-    "static/js/main.573a2698.js"
+    "static/css/main.0a424e1f.css",
+    "static/js/main.bdb80467.js"
   ]
 }
