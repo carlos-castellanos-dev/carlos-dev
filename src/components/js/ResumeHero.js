@@ -2,8 +2,8 @@ import "../css/ResumeHero.css";
 import Resume from "../assests/Carlos-Castellanos-Resume.pdf";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Page from "../images/page.png";
-import { IconArrowNarrowRight, IconBriefcase, IconThumbUp, IconTools, IconBrandGithub, IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
+import Page from "../images/page2.png";
+import { IconArrowNarrowRight, IconBriefcase, IconThumbUp, IconTool, IconBrandGithub, IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
 
 function ResumeHero() {
     return (
@@ -63,7 +63,7 @@ function ResumeHero() {
                                 </div>
                                 <div className="resume-card col-lg-4 col-md-4 mb-lg-0 mb-4">
                                     <Card className="card-nav">
-                                        <div className="land-icon"><IconTools size={70} /></div>
+                                        <div className="land-icon"><IconTool size={70} /></div>
                                         <Card.Body className="resume-card-body">
                                             Learn more about my technical & soft skills!
                                             <br />
