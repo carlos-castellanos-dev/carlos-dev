@@ -70,10 +70,10 @@ function Contact() {
             };
 
             await emailjs.send(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
                 templateParams,
-                process.env.REACT_APP_PUBLIC_KEY
+                import.meta.env.VITE_PUBLIC_KEY
             );
 
             // Display success alert

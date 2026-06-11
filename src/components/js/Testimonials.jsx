@@ -7,7 +7,7 @@ import Stav from "../images/testimonials/stav.jpg";
 import Juan from "../images/testimonials/juan.jpg";
 import Ash from "../images/testimonials/ash.jpg";
 import Jeff from "../images/testimonials/jeff.jpg";
-import Testimonial from "../js/TestimonialSlider";
+import Testimonial from "./TestimonialSlider";
 import Slider from "react-slick";
 
 const sliderData = [
