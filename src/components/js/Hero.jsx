@@ -9,9 +9,9 @@ function Hero() {
                     <div className="content">
                         <div className="hero-main">
                             <div className="hero-text">
-                                <h1>Software Developer</h1>
+                                <h1>Deployment Network Engineer</h1>
                                 <p>
-                                    Hi, I'm Carlos Castellanos. A passionate Software Developer based in Hollywood, Florida. 📍
+                                    Hi, I'm Carlos Castellanos. A passionate Deployment Network Engineer based in Hollywood, Florida. 📍
                                 </p>
                                 <span>
                                     <a

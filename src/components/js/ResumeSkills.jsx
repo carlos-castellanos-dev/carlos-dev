@@ -7,96 +7,87 @@ function ResumeSkills() {
                 <div className="container">
                     <div className="skill-content">
                         <div className="skill-header">
-                            <p>Technical & Professinal Skills</p>
+                            <p>Technical & Professional Skills</p>
                         </div>
                         <div className="row">
+                            {/* Column 1: Core & General Competencies */}
                             <div className="col-md-4 mt-5">
-                                <h2>General 🔎</h2>
-                                <h4>Spoken Languages</h4>
+                                <h2>Core & General 🔎</h2>
+                                <h4>Networking Core</h4>
                                 <ul>
-                                    <li><p>English</p></li>
-                                    <li><p>Spanish</p></li>
+                                    <li><p>Layer 1-3 Topology</p></li>
+                                    <li><p>VLAN Configuration</p></li>
+                                    <li><p>IPAM & Subnetting</p></li>
+                                    <li><p>Fiber/Copper Topology</p></li>
+                                    <li><p>CLI Configuration</p></li>
                                 </ul>
                                 <h4>Soft Skills</h4>
                                 <ul>
-                                    <li><p>Communication</p></li>
-                                    <li><p>Collaboration</p></li>
-                                    <li><p>Documentation</p></li>
-                                    <li><p>Work Ethic</p></li>
-                                    <li><p>Time Management</p></li>
-                                    <li><p>Self-Motivated</p></li>
-                                    <li><p>Adaptability</p></li>
-                                    <li><p>Problem-Solving</p></li>
+                                    <li><p>Analytical Troubleshooting</p></li>
+                                    <li><p>SLA Compliance</p></li>
+                                    <li><p>Technical Documentation</p></li>
+                                    <li><p>Cross-functional Collaboration</p></li>
+                                    <li><p>Critical Alert Monitoring</p></li>
                                 </ul>
-                                <h4>Hard Skills</h4>
+                                <h4>Spoken Languages</h4>
                                 <ul>
-                                    <li><p>ADA Accessiblity</p></li>
-                                    <li><p>Debugging</p></li>
-                                    <li><p>API Development</p></li>
-                                    <li><p>Decision Mapping</p></li>
-                                    <li><p>Prototyping</p></li>
-                                    <li><p>Project Management</p></li>
+                                    <li><p>English (Native)</p></li>
+                                    <li><p>Spanish (Fluent)</p></li>
                                 </ul>
                             </div>
+
+                            {/* Column 2: Infrastructure & Automation */}
                             <div className="col-md-4 mt-5">
-                                <h2>Development 👨‍💻</h2>
-                                <h4>Programming Languages</h4>
+                                <h2>Infrastructure & Code 🌐</h2>
+                                <h4>Hardware & Platforms</h4>
                                 <ul>
-                                    <li><p>HTML/CSS</p></li>
-                                    <li><p>JavaScript</p></li>
-                                    <li><p>TypeScript</p></li>
-                                    <li><p>Java</p></li>
+                                    <li><p>Arista Hardware (EOS)</p></li>
+                                    <li><p>Proxmox VE (LXC/VMs)</p></li>
+                                    <li><p>Docker Containerization</p></li>
+                                    <li><p>Amazon Web Services (AWS)</p></li>
+                                    <li><p>Server Rack Architectures</p></li>
+                                </ul>
+                                <h4>Programming & Automation</h4>
+                                <ul>
                                     <li><p>Python</p></li>
-                                    <li><p>C & C++</p></li>
+                                    <li><p>Ansible (IaC Basics)</p></li>
+                                    <li><p>Bash Scripting</p></li>
+                                    <li><p>JavaScript</p></li>
                                     <li><p>SQL</p></li>
-                                    <li><p>PHP</p></li>
                                 </ul>
-                                <h4>Front-End</h4>
+                                <h4>Web Infrastructure & APIs</h4>
                                 <ul>
-                                    <li><p>JSX</p></li>
-                                    <li><p>Sass</p></li>
-                                    <li><p>Bootstrap</p></li>
-                                    <li><p>Tailwind</p></li>
-                                    <li><p>Materialize</p></li>
-                                    <li><p>React</p></li>
-                                    <li><p>jQuery</p></li>
-                                </ul>
-                                <h4>Back-End</h4>
-                                <ul>
-                                    <li><p>Node.js</p></li>
-                                    <li><p>Django</p></li>
-                                    <li><p>MySQL</p></li>
-                                    <li><p>MongoDB</p></li>
-                                    <li><p>Apache Solr</p></li>
+                                    <li><p>NGINX Reverse Proxy</p></li>
+                                    <li><p>Cloudflare</p></li>
+                                    <li><p>RESTful API Integration</p></li>
+                                    <li><p>Django Framework</p></li>
                                 </ul>
                             </div>
+
+                            {/* Column 3: Auxiliary & Enterprise Software */}
                             <div className="col-md-4 mt-5">
-                                <h2>Auxiliary 🔧</h2>
-                                <h4>Environments</h4>
+                                <h2>Systems & Tools 🔧</h2>
+                                <h4>Home-Lab & Routing Labs</h4>
                                 <ul>
-                                    <li><p>Visual Studio</p></li>
-                                    <li><p>VS Code</p></li>
-                                    <li><p>Eclipse</p></li>
-                                    <li><p>pyCharm</p></li>
-                                    <li><p>Brackets</p></li>
-                                    <li><p>Navicat</p></li>
-                                    <li><p>DBeaver</p></li>
+                                    <li><p>pfSense / Firewall Routing</p></li>
+                                    <li><p>Pi-hole (Local DNS)</p></li>
+                                    <li><p>TrueNAS (Network Storage)</p></li>
+                                    <li><p>Tailscale & WireGuard VPN</p></li>
+                                    <li><p>OpenDCIM (Asset Management)</p></li>
                                 </ul>
-                                <h4>Essential Software</h4>
+                                <h4>Monitoring & Data Systems</h4>
                                 <ul>
-                                    <li><p>GitHub</p></li>
+                                    <li><p>Grafana Telemetry</p></li>
+                                    <li><p>MySQL / MongoDB Databases</p></li>
                                     <li><p>GitLab</p></li>
-                                    <li><p>Amazon Web Services</p></li>
-                                    <li><p>Microsoft Teams</p></li>
-                                    <li><p>PuTTY</p></li>
-                                    <li><p>WinSCP</p></li>
-                                    <li><p>Jira</p></li>
+                                    <li><p>Git / GitHub</p></li>
                                 </ul>
-                                <h4>Other</h4>
+                                <h4>Terminal & Operations Tools</h4>
                                 <ul>
-                                    <li><p>Sentry</p></li>
-                                    <li><p>Matomo</p></li>
-                                    <li><p>Wordpress</p></li>
+                                    <li><p>ServiceNow (ITIL / Ticketing)</p></li>
+                                    <li><p>PuTTY & SSH Terminals</p></li>
+                                    <li><p>WinSCP & VS Code</p></li>
+                                    <li><p>Jira & Confluence</p></li>
                                 </ul>
                             </div>
                         </div>

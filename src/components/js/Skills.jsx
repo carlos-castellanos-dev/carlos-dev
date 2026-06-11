@@ -3,62 +3,63 @@ import "../css/Skills.css";
 function Skills() {
     const skillsIcons = [
         {
-            img: "https://skillicons.dev/icons?i=html",
+            img: "https://skillicons.dev/icons?i=py",
             id: 1,
         },
         {
-            img: "https://skillicons.dev/icons?i=css",
+            img: "https://skillicons.dev/icons?i=ansible",
             id: 2,
         },
         {
-            img: "https://skillicons.dev/icons?i=js",
+            img: "https://skillicons.dev/icons?i=linux",
             id: 3,
         },
         {
-            img: "https://skillicons.dev/icons?i=jquery",
+            img: "https://skillicons.dev/icons?i=ubuntu",
             id: 4,
         },
         {
-            img: "https://skillicons.dev/icons?i=bootstrap",
+            img: "https://skillicons.dev/icons?i=docker",
             id: 5,
         },
         {
-            img: "https://skillicons.dev/icons?i=sass",
+            img: "https://skillicons.dev/icons?i=aws",
             id: 6,
         },
         {
-            img: "https://skillicons.dev/icons?i=tailwind",
+            img: "https://skillicons.dev/icons?i=nginx",
             id: 7,
         },
         {
-            img: "https://skillicons.dev/icons?i=react",
+            img: "https://skillicons.dev/icons?i=cloudflare",
             id: 8,
         },
         {
-            img: "https://skillicons.dev/icons?i=nodejs",
+            img: "https://skillicons.dev/icons?i=bash",
             id: 9,
         },
         {
-            img: "https://skillicons.dev/icons?i=py",
+            img: "https://skillicons.dev/icons?i=git",
             id: 10,
         },
         {
-            img: "https://skillicons.dev/icons?i=django",
+            img: "https://skillicons.dev/icons?i=github",
             id: 11,
         },
         {
-            img: "https://skillicons.dev/icons?i=mysql",
+            img: "https://skillicons.dev/icons?i=gitlab",
             id: 12,
         },
         {
-            img: "https://skillicons.dev/icons?i=cpp",
+            img: "https://skillicons.dev/icons?i=mysql",
             id: 13,
         },
         {
-            img: "https://skillicons.dev/icons?i=sentry",
+            img: "https://skillicons.dev/icons?i=windows",
             id: 14,
         },
     ];
+
     return (
         <>
             <section id="skills" className="skills-list">
