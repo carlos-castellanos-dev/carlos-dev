@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. BASE CONTACT SECTION CONTAINER
+   ========================================================================= */
 .contact {
     background-color: white;
     padding: 11rem 0;
@@ -21,13 +24,18 @@
 .contact__title h3 {
     color: #2d2e32;
     font-size: 2.5rem;
+    text-align: center;
 }
 
+/* ==========================================================================
+   2. INFORMATIONAL SOCIAL & DETAIL CARDS
+   ========================================================================= */
 .contact__icons {
     display: flex;
     gap: 8rem;
     flex-wrap: wrap;
     margin-top: 6rem;
+    justify-content: center;
 }
 
 .contact__icon-box {
@@ -39,18 +47,20 @@
 .contact__icon-box span {
     background-color: white;
     width: 5rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     color: #147efb;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact__icon-box span :hover {
+.contact__icon-box span:hover {
     cursor: pointer;
     color: #767676;
+    transform: translateY(-2px);
 }
 
 .contact__info {
@@ -62,65 +72,105 @@
 .contact__info h3 {
     font-size: 1.7rem;
     color: #2d2e32;
+    margin: 0;
 }
 
 .contact__info a,
-.contact__info p {
+.contact__info p,
+.location-btn {
     font-size: 1.7rem;
     color: #767676;
     text-decoration: none;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.location-btn {
+    background: none !important;
+    border: none;
+    padding: 0;
+    text-align: left;
 }
 
 .contact__info a:hover,
 .location-btn:hover {
     color: #147efb;
-    transition: all 0.3s;
 }
 
-.location-btn {
-    text-decoration: none;
-    color: #767676;
-    background: none !important;
-    border: none;
-    font-size: 1.7rem;
-}
-
-/* Contact Form */
+/* ==========================================================================
+   3. CLEANED UP CONTACT FORM (RESTORING ORIGINAL FULL-WIDTH LOOK)
+   ========================================================================= */
 .ContactForm {
     width: 100%;
     padding-top: 5rem;
+    /* Removed max-width restriction to allow the container to stretch fully */
 }
 
-.form-control {
-    font-size: 15px;
+.form-control.formInput {
+    font-size: 15px; /* Restored original font size */
     border: none;
-    border-bottom: 1px solid #767676;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #767676; /* Restored original border-bottom size */
+    margin-bottom: 30px; /* Restored original element layout gaps */
     resize: none;
-    height: 60px;
+    height: 60px; /* Restored original field height */
     padding: 0;
     outline: 0;
     border-radius: 0;
+    background: transparent;
+    box-shadow: none; 
+    transition: border-color 0.3s ease;
 }
 
-.form-control:focus {
+/* Retained focus cleanup to avoid default Bootstrap blue block shadows */
+.form-control.formInput:focus {
     box-shadow: none;
+    background-color: transparent;
+    border-bottom-color: #147efb;
 }
 
-textarea {
-    height: 20vh !important;
+/* Restored original viewport scaling for your message textbox */
+textarea.form-control.formInput {
+    height: 20vh !important; 
+    padding-top: 1rem;
 }
 
+/* Spacing helper for React Hook Form Error Messages */
+.errorMessage {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -20px; /* Pulls the error up gracefully into the original 30px margin block */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Restored original Submit button shape and constraints */
 .submit-btn {
     width: 100%;
-    height: 50px;
+    height: 50px; /* Restored original height */
     font-weight: bold;
-    font-size: medium;
+    font-size: medium; /* Restored original size property token */
+    background-color: #147efb !important; /* Changes the resting color back to blue */
+    color: white !important;
+    border: none !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
 }
 
-/* Media Queries */
+.submit-btn:hover {
+    background-color: #2d2e32 !important; /* Changes the hover state to dark gray */
+}
 
+.submit-btn:active {
+    transform: scale(0.99) !important;
+}
+
+/* ==========================================================================
+   4. CONSOLIDATED RESPONSIVE MEDIA QUERIES
+   ========================================================================= */
 @media (max-width: 1020px) {
     .contact {
         padding: 8rem 0;
@@ -128,22 +178,23 @@ textarea {
 }
 
 @media (max-width: 992px) {
-    .contact__title {
+    .contact__title h3 {
         text-align: center;
     }
-}
 
-@media (max-width: 992px) {
     .contact__icons {
         flex-direction: column;
-        gap: 5rem;
-        justify-content: center;
+        gap: 4rem;
+        align-items: center;
         text-align: center;
     }
-}
 
-@media (max-width: 992px) {
     .contact__icon-box {
         flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .location-btn {
+        text-align: center;
     }
 }

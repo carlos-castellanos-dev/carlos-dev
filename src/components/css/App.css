@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. GLOBAL RESET & BASE ELEMENTS
+   ========================================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,27 +18,15 @@ body {
   position: relative;
 }
 
-body.preload * {
-  animation-duration: 0s !important;
-  -webkit-animation-duration: 0s !important;
-  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+/* Global Typography Default Weights */
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold !important;
-}
-
+/* ==========================================================================
+   2. LAYOUT CONTAINERS
+   ========================================================================== */
 .container {
   max-width: 107rem;
   margin: 0 auto;
@@ -48,28 +39,32 @@ h6 {
   }
 }
 
-/* Firefox */
+/* ==========================================================================
+   3. PRELOAD ANIMATION FLICKER GUARD
+   ========================================================================== */
+body.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
+/* ==========================================================================
+   4. CROSS-BROWSER SCROLLBAR STYLING
+   ========================================================================== */
+/* Firefox Engines */
 * {
   scrollbar-width: thin;
   scrollbar-color: #8e8e8e #ffffff;
 }
 
-/* Chrome, Edge and Safari */
+/* Chrome, Edge, Safari, and Opera Engines */
 *::-webkit-scrollbar {
   width: 8px;
-  width: 8px;
+  height: 8px;
 }
 
 *::-webkit-scrollbar-track {
   border-radius: 20px;
-  background-color: #ffffff;
-}
-
-*::-webkit-scrollbar-track:hover {
-  background-color: #ffffff;
-}
-
-*::-webkit-scrollbar-track:active {
   background-color: #ffffff;
 }
 

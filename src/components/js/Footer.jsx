@@ -8,7 +8,7 @@ function Footer() {
                 <div className="container">
                     <div className="footerc">
                         <h4>
-                            Copyright © {new Date().getFullYear()} Carlos Castellanos. <br></br> All Rights Reserved.
+                            Copyright © {new Date().getFullYear()} Carlos Castellanos.<br />All Rights Reserved.
                         </h4>
                         <div className="footerc__socials">
                             <a
@@ -17,7 +17,7 @@ function Footer() {
                                 rel="noreferrer"
                                 href="https://www.linkedin.com/in/castellanosc/"
                             >
-                                <IconBrandLinkedin width={30} height={30} />
+                                <IconBrandLinkedin width={30} height={30} stroke={1.5} />
                             </a>
                             <a
                                 aria-label="github"
@@ -25,7 +25,7 @@ function Footer() {
                                 rel="noreferrer"
                                 href="https://github.com/carlos-castellanos-dev"
                             >
-                                <IconBrandGithub width={30} height={30} />
+                                <IconBrandGithub width={30} height={30} stroke={1.5} />
                             </a>
                         </div>
                     </div>

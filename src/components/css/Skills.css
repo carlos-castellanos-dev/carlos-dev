@@ -1,12 +1,18 @@
+/* ==========================================================================
+   UNIFIED TECH SKILLS INFINITE TRACK
+   ========================================================================== */
 .skills-list {
     background-color: #f9f9f9;
     font-size: 1.7rem;
     color: #767676;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 20vh;
+    height: 18vh; /* Matches the viewport handoff perfectly */
+    min-height: 14rem; /* Slightly increased to prevent squishing on low-res screens */
     position: relative;
+    box-sizing: border-box;
 }
 
 .skills-content {
@@ -14,6 +20,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .skills-main {
@@ -21,32 +28,38 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .skills-main p {
-    margin-right: 15px;
+    margin: 0 15px 0 0;
     padding-right: 2rem;
     border-right: 2px solid rgba(45, 46, 50, 0.5);
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     color: #2d2e32;
+    white-space: nowrap;
 }
 
 .skills-main ul {
     list-style: none;
     display: flex;
     padding-left: 0 !important;
+    margin: 0;
+    align-items: center;
 }
 
-.skills-main ul li img:hover {
-    transform: translateY(-1rem);
-}
-
-.logo {
+.skills-main ul li img {
+    transition: transform 0.3s ease-in-out; /* Smooth slide animation */
     cursor: pointer;
-    color: #2d2e32;
 }
 
+/* Beautiful hover action that moves up cleanly without cutting off */
+.skills-main ul li img:hover {
+    transform: translateY(-10px); 
+}
+
+/* FIX: Increased height and padding to give icons an internal bumper area to animate into */
 .logos {
     overflow: hidden;
     white-space: nowrap;
@@ -54,13 +67,13 @@
     width: 50vw;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 130px; /* Bumped up from 100px to accommodate the vertical translation */
+    padding-top: 15px; /* Creates internal overhead clearance for overflow:hidden */
 }
 
 .logos-slide {
     display: inline-block;
-    animation: 10s slide infinite linear;
-    -webkit-animation: 10s 1s slide infinite linear;
+    animation: 15s slide infinite linear;
 }
 
 .logos-slide img {
@@ -71,28 +84,36 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-100%);
     }
 }
 
-@-webkit-keyframes slide {
-    from {
-        -webkit-transform: translateX(0);
-    }
-
-    to {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
+/* ==========================================================================
+   RESPONSIVE LAYOUT CONSTRAINTS
+   ========================================================================== */
 @media (max-width: 900px) {
+    .skills-list {
+        height: auto;
+        padding: 3rem 0 5rem 0;
+    }
+
     .skills-main {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skills-main p {
+        border-right: none;
+        border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+        padding-right: 0;
+        padding-bottom: 1rem;
+        margin-right: 0;
     }
 
     .logos {
         width: 80vw;
+        height: auto;
+        padding-top: 20px;
     }
 }

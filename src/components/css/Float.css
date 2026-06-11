@@ -1,73 +1,74 @@
-.float-hub {
-    background-color: #fff;
-    position: fixed !important;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    margin: 0;
-    padding: 0;
-}
-
+/* ==========================================================================
+   FIXED FLOATING ACTION BUTTON (REFACTORED CONFLICTS)
+   ========================================================================== */
 .resume-btn {
-    position: absolute;
-    text-align: center;
-    color: #147efb;
-    border-style: solid;
-    bottom: 20px;
-    left: 20px;
+    position: fixed; /* Bound directly to viewport screen corners */
+    bottom: 3rem;    /* Swapped to rem layout coordinates for zoom stability */
+    left: 3rem;
+    z-index: 999;    /* Ensure it floats above footers and backgrounds */
+    
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    animation: jittery 4s infinite;
+    background-color: #ffffff;
+    color: #147efb;
+    border: 0.2rem solid #147efb;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.15); /* Sleek shadow depth */
+    
+    /* Forces all Tabler icons to remain perfectly centered automatically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    cursor: pointer;
+    animation: jittery 4s infinite ease-in-out;
+    transition: transform 0.2s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Clear, premium interactive transformations */
 .resume-btn:hover {
-    animation: heartbeat 1s infinite;
+    animation: heartbeat 1.2s infinite ease-in-out;
+    background-color: #147efb;
+    color: #ffffff;
+    border-color: #147efb;
 }
 
-.float-icon {
-    margin-top: 2px;
-}
-
+/* ==========================================================================
+   ANIMATION KEYFRAMES
+   ========================================================================== */
 @keyframes jittery {
-
-    5%,
-    50% {
+    0%, 50%, 100% {
         transform: scale(1);
     }
-
     10% {
-        transform: scale(0.9);
+        transform: scale(0.92);
     }
-
     15% {
-        transform: scale(1.15);
+        transform: scale(1.08);
     }
-
     20% {
-        transform: scale(1.15) rotate(-5deg);
+        transform: scale(1.08) rotate(-6deg);
     }
-
     25% {
-        transform: scale(1.15) rotate(5deg);
+        transform: scale(1.08) rotate(6deg);
     }
-
     30% {
-        transform: scale(1.15) rotate(-3deg);
+        transform: scale(1.08) rotate(-4deg);
     }
-
     35% {
-        transform: scale(1.15) rotate(2deg);
+        transform: scale(1.08) rotate(3deg);
     }
-
     40% {
-        transform: scale(1.15) rotate(0);
+        transform: scale(1.08) rotate(0deg);
     }
 }
 
 @keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }

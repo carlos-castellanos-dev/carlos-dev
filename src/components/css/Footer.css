@@ -1,16 +1,19 @@
+/* ==========================================================================
+   PRODUCTION-READY FOOTER COMPONENT
+   ========================================================================== */
 footer {
     background-color: #2d2e32;
     padding: 5rem 0;
     width: 100%;
 }
 
-footer h3 {
-    font-size: 1.7rem;
-    color: white;
-}
-
+/* Explicit font token variables keep typography consistent */
 footer h4 {
-    color: white;
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 1.6; /* Prevents text row compression when breaking lines */
+    font-weight: 600;
+    margin: 0; /* Clears hidden margin blocks */
 }
 
 .footerc {
@@ -23,27 +26,32 @@ footer h4 {
     display: flex;
     gap: 2rem;
     align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
 }
 
 .footerc__socials a {
-    font-size: 2.3rem;
-    color: white;
+    color: #ffffff;
+    display: inline-flex; /* Ensures the bounding box wraps the Tabler icon precisely */
+    /* Transition belongs on the base element to ensure smooth easing on exit */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; 
 }
 
 .footerc__socials a:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+    color: #147efb; /* Swaps white out for your brand signature blue */
+    transform: scale(1.15); /* Sleek, uniform sizing scale jump */
 }
 
-/* Media Queries */
-
+/* ==========================================================================
+   CONSOLIDATED MOBILE VIEWPORT MEDIA QUERIES
+   ========================================================================== */
 @media (max-width: 550px) {
     .footerc {
-        flex-wrap: wrap;
+        flex-direction: column; /* Locks alignment down to a stable vertical column stack */
         justify-content: center;
-        gap: 2rem;
+        gap: 2.5rem;
         text-align: center;
+    }
+    
+    footer h4 br {
+        display: none; /* Destroys the line break to give mobile screens full sentence length */
     }
 }

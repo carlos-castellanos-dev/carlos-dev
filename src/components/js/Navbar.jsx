@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import "../css/Navbar.css";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
@@ -12,90 +12,75 @@ function Navbar() {
     };
 
     const pageUp = () => {
-        window.scrollTo({ top: (0, 0), behavior: "smooth" });
+        // Fixed syntax tuple coordinate calculation bug
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const navlinks = () => {
-        return location.pathname !== '/Resume' ? homelinks : resumelinks;
-    }
+    // Correctly structured the logic to reference state arrays accurately
+    const getNavLinks = () => {
+        return location.pathname === '/Resume' ? resumelinks : homelinks;
+    };
 
     const homelinks = [
-        {
-            name: "Home",
-            link: "/",
-            color: "#147efb"
-        },
-        {
-            name: "About",
-            link: "#about",
-        },
-        {
-            name: "Projects",
-            link: "#projects",
-        },
-        {
-            name: "Contact",
-            link: "#contact",
-        },
-        {
-            name: "Resume",
-            link: "Resume",
-        },
+        { name: "Home", link: "/", isRoute: true, color: "#147efb" },
+        { name: "About", link: "#about", isRoute: false },
+        { name: "Projects", link: "#projects", isRoute: false },
+        { name: "Contact", link: "#contact", isRoute: false },
+        { name: "Resume", link: "/Resume", isRoute: true }, // Added explicit path lead slash
     ];
 
     const resumelinks = [
-        {
-            name: "Home",
-            link: "/",
-        },
-        {
-            name: "Experience",
-            link: "#experience",
-
-        },
-        {
-            name: "Testimonials",
-            link: "#testimonials",
-        },
-        {
-            name: "Skills",
-            link: "#rskill",
-
-        },
-        {
-            name: "Resume",
-            link: "Resume",
-            color: "#147efb"
-        },
+        { name: "Home", link: "/", isRoute: true },
+        { name: "Experience", link: "#experience", isRoute: false },
+        { name: "Testimonials", link: "#testimonials", isRoute: false },
+        { name: "Skills", link: "#rskill", isRoute: false },
+        { name: "Resume", link: "/Resume", isRoute: true, color: "#147efb" },
     ];
+
     return (
         <>
-            <nav>
+            <nav className="navbar-container">
                 <h3 onClick={pageUp} className="logo">
                     CARLOSC.DEV
                 </h3>
-                <ul>
-                    {navlinks(location.pathname).map((item) => (
+                
+                {/* Desktop Link Items Display Array Container */}
+                <ul className="nav-links__desktop">
+                    {getNavLinks().map((item) => (
                         <li key={item.name}>
-                            <a href={item.link} style={{ color: item.color }} >{item.name}</a>
+                            {item.isRoute ? (
+                                <Link to={item.link} style={{ color: item.color }} onClick={pageUp}>
+                                    {item.name}
+                                </Link>
+                            ) : (
+                                <a href={item.link} style={{ color: item.color }}>{item.name}</a>
+                            )}
                         </li>
                     ))}
-                    <li onClick={() => hamburgerMenu()}>
-                        <IconMenu2 className="mobile-menu" width={30} height={30} />
-                    </li>
                 </ul>
+
+                {/* Mobile Hamburger Trigger Separated from the Desktop Row List */}
+                <div className="mobile-hamburger__trigger" onClick={hamburgerMenu}>
+                    <IconMenu2 className="mobile-menu" width={30} height={30} />
+                </div>
             </nav>
 
-            {/* mobile nav */}
+            {/* Mobile Sidebar Navigation Panel */}
             <div className={`mobile-nav ${hamburger ? "open-menu" : "closed-menu"}`}>
-                <span onClick={() => hamburgerMenu()}>
+                <span className="close-trigger" onClick={hamburgerMenu}>
                     <IconX width={30} height={30} />
                 </span>
 
                 <ul>
-                    {navlinks(location.pathname).map((item) => (
-                        <li key={item.name} onClick={() => hamburgerMenu()}>
-                            <a href={item.link} style={{ color: item.color }} >{item.name}</a>
+                    {getNavLinks().map((item) => (
+                        <li key={item.name} onClick={hamburgerMenu}>
+                            {item.isRoute ? (
+                                <Link to={item.link} style={{ color: item.color }} onClick={pageUp}>
+                                    {item.name}
+                                </Link>
+                            ) : (
+                                <a href={item.link} style={{ color: item.color }}>{item.name}</a>
+                            )}
                         </li>
                     ))}
                 </ul>

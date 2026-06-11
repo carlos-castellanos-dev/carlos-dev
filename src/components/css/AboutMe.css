@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. BASE CONTAINER & GRID LAYOUT
+   ========================================================================== */
 .about {
     background-color: white;
     padding: 15rem 0;
@@ -5,17 +8,20 @@
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1.1fr; 
     justify-content: center;
     align-items: center;
+    gap: 8rem;
 }
 
+/* ==========================================================================
+   2. TEXT COLUMN STYLES
+   ========================================================================== */
 .text-side {
     padding-right: 1.5rem;
 }
 
 .text-side span {
-    -webkit-text-decoration: underline #147efb;
     text-decoration: underline #147efb;
 }
 
@@ -43,104 +49,130 @@
     line-height: 1.5;
 }
 
+/* ==========================================================================
+   3. IMAGE & BADGE POSITIONING (ANTI-WOBBLE SYSTEM)
+   ========================================================================== */
 .img-side {
     position: relative;
-}
-
-.img-side span {
-    width: 19rem;
-    height: 19rem;
-    position: absolute;
-    background-color: white;
-    bottom: -33px;
-    right: 33px;
-    border-radius: 50%;
-}
-
-.img-side span img {
-    width: 19rem;
-    animation: rotate 9s linear infinite;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
+    display: flex;
 }
 
 .img-side__main-img {
     width: 41rem;
     height: 35rem;
     border-radius: 1.7rem;
+    object-fit: cover;
+    object-position: center;
 }
 
+/* The White Base Circle Frame */
+.img-side span {
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
+    background-color: white;
+    bottom: -2rem; 
+    right: -4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.rotate-wrapper {
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform-box: fill-box;
+    transform-origin: center center; 
+    animation: rotate 25s linear infinite;
+}
+
+.img-side span img:not(.work-emoji) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Stationary Central Emoji */
 .work-emoji {
     position: absolute;
     z-index: 10;
-    width: 6rem !important;
-    bottom: 35px;
-    right: 98px;
+    width: 5.5rem !important;
+    height: 5.5rem !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Media Queries */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+/* ==========================================================================
+   4. CONSOLIDATED RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
 @media (max-width: 1020px) {
     .about {
         padding: 8rem 0;
     }
-}
 
-@media (max-width: 1020px) {
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 0;
     }
-}
 
-@media (max-width: 1020px) {
     .text-side {
         max-width: 54rem;
         margin: 0 auto;
     }
-}
 
-@media (max-width: 400px) {
-    .text-side {
-        padding-right: 0;
+    /* 1. FORCE THE CONTAINER TO STACK VERTICALLY IN TABLET MODE */
+    .img-side {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
     }
-}
 
-@media (max-width: 1020px) {
+    .img-side__main-img {
+        /* Reduced bottom margin slightly to keep the badge tucked closer */
+        margin-bottom: 2rem; 
+    }
+
+    /* 2. RE-CALIBRATED TABLET BADGE POSITIONING */
     .img-side span {
         width: 17rem;
         height: 17rem;
-        bottom: -3px;
-        right: 190px;
+        
+        /* By switching to position: relative and resetting margins, 
+           the badge behaves like a standard element below the image */
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto 3.5rem auto; /* Centers it horizontally and pushes the "About Me" text down */
+        transform: none; /* Clears any conflicting translation math */
     }
-}
 
-@media (max-width: 880px) {
-    .img-side span {
-        bottom: -3px;
-        right: 100px;
+    .img-side span img:not(.work-emoji) {
+        width: 17rem;
+        height: 17rem;
     }
 }
 
 @media (max-width: 750px) {
+    /* Destroys the overlapping graphic components together on small phone screens */
     .img-side span {
-        display: none;
-    }
-}
-
-@media (max-width: 1020px) {
-    .img-side span img {
-        width: 17rem;
-    }
-}
-
-@media (max-width: 1020px) {
-    .img-side__main-img {
-        margin-bottom: 3.5rem;
+        display: none; 
     }
 }
 
@@ -151,22 +183,8 @@
     }
 }
 
-@media (max-width: 1020px) {
-    .work-emoji {
-        bottom: 50px;
-        right: 245px;
-    }
-}
-
-@media (max-width: 880px) {
-    .work-emoji {
-        bottom: 57px;
-        right: 156px;
-    }
-}
-
-@media (max-width: 750px) {
-    .work-emoji {
-        display: none;
+@media (max-width: 400px) {
+    .text-side {
+        padding-right: 0;
     }
 }
