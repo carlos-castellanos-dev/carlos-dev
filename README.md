@@ -1,23 +1,24 @@
 # Hi! My name is Carlos Castellanos 😄 
 ====================================================================================================
 
-🌍 I am a **Data Center Deployment Network Engineer** based in Hollywood, Florida, specializing in high-performance compute clusters, network infrastructure, and automation.
+🌍 I am a **Data Center Deployment Network Engineer** based in Hollywood, Florida, with a background in software development and data center infrastructure.
 
-🎓 **Computer Science Graduate (B.S.)** from Florida Atlantic University (FAU) with distinct honorifics including *Magna Cum Laude* and *Presidential Honors*. 
+🎓 **Computer Science Graduate (B.S.)** from Florida Atlantic University (FAU) with distinct honors, including *Magna Cum Laude* and *Presidential Honors*. 
 
-⚡ I bring a unique blend of core enterprise networking experience paired with a strong software development background—allowing me to write robust automation scripts (Python/Ansible/Bash) to optimize network performance, configuration reliability, and infrastructure uptime.
+⚡ I leverage my computer science and programming background to write helpful scripts, build automation workflows, and support high-availability network infrastructure.
 
 <br/>
 
 ### 🛠️ Infrastructure & Networking Stack
 
-[![My Skills](https://skillicons.dev/icons?i=linux,ubuntu,aws,nginx,cloudflare)](https://skillicons.dev)
-* **Core Core Competencies:** Arista EOS, Layer 1-3 Infrastructure deployment, CLI Configuration, VLAN Provisioning, IPAM/Subnetting, and OTDR Fiber diagnostics.
+[![My Skills](https://skillicons.dev/icons?i=linux,ubuntu,debian,nginx,cloudflare)](https://skillicons.dev)
+* **Core Competencies:** Working with Arista Hardware (EOS), Layer 1-3 network infrastructure deployment, CLI configuration, VLAN setup, IPAM/Subnetting, and troubleshooting fiber and copper setups.
 
 ### 🐍 Automation & Scripting Stack
 
-[![My Skills](https://skillicons.dev/icons?i=python,ansible,bash,git,github)](https://skillicons.dev)
-* **DevOps & Developer Foundation:** Infrastructure as Code (IaC), CI/CD pipelines, Docker virtualization, Proxmox (LXC/VM environments), MySQL, and RESTful APIs.
+[![My Skills](https://skillicons.dev/icons?i=python,ansible,docker,bash,git,github)](https://skillicons.dev)
+* **Automation & Systems Foundation:** Network automation scripting with Python, Infrastructure as Code (Ansible), and version control using Git/GitHub.
+* **Virtualization & Database Tools:** Deploying and managing virtual environments (Docker, Proxmox LXC/VMs), working with RESTful APIs, and managing MySQL databases.
 
 <br/>
 
