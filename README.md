@@ -11,7 +11,7 @@
 
 ### 🛠️ Infrastructure & Networking Stack
 
-[![My Skills](https://skillicons.dev/icons?i=linux,ubuntu,debian,nginx,cloudflare)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=windows,linux,ubuntu,debian,nginx,cloudflare)](https://skillicons.dev)
 * **Core Competencies:** Working with Arista Hardware (EOS), Layer 1-3 network infrastructure deployment, CLI configuration, VLAN setup, IPAM/Subnetting, and troubleshooting fiber and copper setups.
 
 ### 🐍 Automation & Scripting Stack
