@@ -4,24 +4,39 @@ import { IconBrandLinkedin } from "@tabler/icons-react";
 
 function TestimonialSlider({ slider }) {
     const { avatar, userName, subtitle, link, review } = slider;
+    
     return (
-        <div className="testimonial-item text-center mx-auto">
-            <div className="thumb mb-3 mx-auto">
-                <img src={avatar} alt="customer-name" />
+        <div className="testimonial-slide-container">
+            <div className="testimonial-card">
+                
+                <div className="testimonial-quote-box">
+                    <p className="testimonial-review">{review}</p>
+                </div>
+                
+                <div className="testimonial-profile-footer">
+                    <div className="thumb">
+                        <img src={avatar} alt={`${userName} headshot`} />
+                    </div>
+                    <div className="profile-info">
+                        <h4 className="profile-name">{userName}</h4>
+                        <span className="profile-subtitle">{subtitle}</span>
+                    </div>
+                    
+                    <a
+                        aria-label={`${userName} LinkedIn Profile`}
+                        rel="noreferrer"
+                        target="_blank"
+                        href={link}
+                        className="profile-link-btn"
+                    >
+                        <Button variant="primary" className="test-linkedin-btn">
+                            <IconBrandLinkedin size={20} />
+                            View Profile
+                        </Button>
+                    </a>
+                </div>
+
             </div>
-            <h4 className="mt-3 mb-0">{userName}</h4>
-            <span className="subtitle">{subtitle}</span>
-            <div className="test-text triangle-top position-relative mt-4">
-                <p className="mb-0">{review}</p>
-            </div>
-            <a
-                aria-label="linkedin"
-                rel="noreferrer"
-                target="_blank"
-                href={link}
-            >
-                <Button variant="primary" className='test-icon mt-5'><IconBrandLinkedin className='me-2' size={30} />View Profile</Button>{' '}
-            </a>
         </div>
     );
 }

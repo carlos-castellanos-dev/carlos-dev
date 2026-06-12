@@ -1,123 +1,199 @@
-.resume-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90rem;
-    gap: 10rem;
-    position: relative;
-}
-
-.download-btn {
-    width: 100%;
-    height: 50px;
-    font-weight: bold;
-    font-size: medium;
-}
-
-.download-icon {
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-
+/* ==========================================================================
+   MAIN BASE RESUME SECTION BLOCK
+   ========================================================================== */
 .resume-hero {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 100vh;
     background-color: #f9f9f9;
-    position: relative;
+    padding-top: 11rem;
+    box-sizing: border-box;
 }
 
-.resume-main {
-    gap: 5rem !important;
-    text-align: start !important;
-
+.resume-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 0 6rem 0;
 }
 
-.resume-text {
-    max-width: 30rem !important;
+.resume-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    max-width: 55rem; 
+    width: 100%;
+    margin-bottom: 5rem; 
 }
 
-.resume-text img {
+.resume-text-section h1 {
+    font-size: 5.5rem;
+    color: #2d2e32;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.resume-page-emoji {
     height: 5rem !important;
-    margin-bottom: 20px;
-    position: static;
+    width: auto;
+    margin-bottom: 2rem;
 }
 
-.resume-text a {
+.resume-text-section p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #555555;
+    font-family: "Mulish", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.resume-socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.resume-socials a {
+    color: #2d2e32;
+    display: inline-flex;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.resume-socials a:hover {
+    color: #147efb;
+    transform: scale(1.15);
+}
+
+.download-btn__link {
+    max-width: 30rem; 
     width: 100%;
 }
 
-@media (max-width: 900px) {
-    .resume-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
-}
-
-@media (max-width: 760px) {
-    .resume-content {
-        height: 135rem;
-    }
-}
-
-@media (max-height: 600px) {
-    .resume-content {
-        height: 70rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .resume-main {
-        flex-direction: column !important;
-    }
-}
-
-
-/* Cards CSS */
-.resume-card {
-    display: flex;
-    justify-content: center;
-}
-
-.card-nav {
-    border-radius: 25px;
-    border-color: #fff;
-    background-color: #fff;
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.12);
-    max-width: 200px;
-}
-
-.card-nav:hover {
-    border-color: #147efb;
-}
-
-.card img {
-    max-width: 100%;
-    height: 200px;
-    border-radius: 5%;
-}
-
-.card-nav a {
-    text-decoration: none;
-    font-size: 1.8rem;
+.download-btn {
+    width: 100%;
+    height: 5.2rem;
     font-weight: 700;
-    color: #147efb;
-    font-family: "Mulish", sans-serif;
-    line-height: 1.6;
+    font-size: 1.6rem !important;
+    border-radius: 0.8rem !important;
+    border: none !important;
+    background-color: #147efb !important;
+    color: #ffffff !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: background-color 0.2s ease, transform 0.2s ease !important;
 }
 
-.card-nav a:hover {
-    color: #555555;
+.download-btn:hover {
+    background-color: #2d2e32 !important;
 }
 
-.resume-card-body {
-    font-weight: 600;
-    font-size: x-small;
+/* ==========================================================================
+   BOTTOM FULL-WIDTH NAVIGATION CARDS (CENTER ALIGNED)
+   ========================================================================== */
+.resume-cards__row {
+    width: 100%;
+    max-width: 105rem; 
+    margin: 0 auto;
+}
+
+.resume-cards__row .card {
+    border-radius: 2rem !important;
+    border: 0.2rem solid #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.05) !important;
+    transition: border-color 0.3s ease, transform 0.3s ease !important;
+    width: 100% !important;
+    min-height: 22rem !important;
+}
+
+.resume-cards__row .card:hover {
+    border-color: #147efb !important;
+    transform: translateY(-0.4rem) !important;
 }
 
 .land-icon {
     color: #147efb;
-    margin: 15px;
+    margin: 3.5rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-cards__row .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; 
+    padding: 0 3rem 3.5rem 3rem !important;
+    box-sizing: border-box;
+    text-align: center !important;
+}
+
+.card-desc-text {
+    font-size: 1.5rem !important;
+    color: #2d2e32 !important; 
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin: 0 0 2rem 0 !important;
+    text-align: center !important;
+    font-family: "Mulish", sans-serif !important;
+}
+
+.resume-cards__row .card-body .card-link {
+    text-decoration: none !important;
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #147efb !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.6rem !important;
+    
+    transition: color 0.2s ease-in-out;
+    font-family: "Mulish", sans-serif !important;
+}
+
+.resume-cards__row .card-body .card-link:hover {
+    color: #2d2e32 !important;
+}
+
+.resume-cards__row .card-body .card-link svg {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+}
+
+/* ==========================================================================
+   SCROLL HINT COMPONENT & ANIMATION
+   ========================================================================== */
+.scroll-hint {
+    margin-top: 2.5rem;
+    text-align: center;
+    animation: hintBounce 2s infinite;
+}
+
+.scroll-hint p {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #555555 !important;
+    font-family: "Mulish", sans-serif !important;
+    margin: 0 !important;
+    letter-spacing: -0.02rem;
+}
+
+@keyframes hintBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4px);
+    }
 }
