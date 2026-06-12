@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. SECTION CORE WRAPPERS
+   SECTION CORE WRAPPERS
    ========================================================================== */
 .experience {
     background-color: #ffffff;
@@ -25,7 +25,7 @@
 }
 
 /* ==========================================================================
-   2. HEADER CONTAINER EMBLEM GRAPHICS
+   HEADER CONTAINER EMBLEM GRAPHICS
    ========================================================================== */
 .title {
     display: inline-flex;
@@ -53,7 +53,7 @@
 }
 
 /* ==========================================================================
-   3. PIXEL-PERFECT TIMELINE GRAPH MATRIX
+   PIXEL-PERFECT TIMELINE GRAPH MATRIX
    ========================================================================== */
 .resume-items {
     padding-left: 2rem; 
@@ -66,11 +66,10 @@
     box-sizing: border-box;
 }
 
-.resume-items .resume-item;last-child {
+.resume-items .resume-item:last-child {
     padding-bottom: 0;
 }
 
-/* Clear vertical track timeline rail line coordinates */
 .resume-items .resume-item::before {
     content: "";
     position: absolute;
@@ -81,12 +80,10 @@
     background-color: #147efb;
 }
 
-/* FIX: Dynamically hides the line tail underneath whichever item is last in the markup */
 .resume-items .resume-item:last-child::before {
     display: none !important; 
 }
 
-/* Symmetrical date metric badge boxes */
 .resume-items .resume-item .date {
     position: relative;
     display: inline-flex;
@@ -105,7 +102,6 @@
     box-sizing: border-box;
 }
 
-/* Horizontal connector line alignment */
 .resume-items .resume-item .date::before {
     content: "";
     position: absolute;
@@ -118,7 +114,6 @@
     z-index: -1;
 }
 
-/* Premium circular node pinpoint intersection dot */
 .resume-items .resume-item .date::after {
     content: "";
     position: absolute;
@@ -133,7 +128,6 @@
     z-index: 3;
 }
 
-/* Typography Modules */
 .resume-items .resume-item h5.role-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -153,7 +147,7 @@
 }
 
 /* ==========================================================================
-   4. RESPONSIVE VIEWPORT BREAKPOINTS
+   RESPONSIVE VIEWPORT BREAKPOINTS
    ========================================================================== */
 @media (max-width: 768px) {
     .experience-items .col-12.col-md-6:first-child {
