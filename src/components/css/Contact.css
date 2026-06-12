@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. BASE CONTACT SECTION CONTAINER
+   BASE CONTACT SECTION CONTAINER
    ========================================================================= */
 .contact {
     background-color: white;
@@ -28,7 +28,7 @@
 }
 
 /* ==========================================================================
-   2. INFORMATIONAL SOCIAL & DETAIL CARDS
+   INFORMATIONAL SOCIAL & DETAIL CARDS
    ========================================================================= */
 .contact__icons {
     display: flex;
@@ -98,21 +98,20 @@
 }
 
 /* ==========================================================================
-   3. CLEANED UP CONTACT FORM (RESTORING ORIGINAL FULL-WIDTH LOOK)
+   CLEANED UP CONTACT FORM
    ========================================================================= */
 .ContactForm {
     width: 100%;
     padding-top: 5rem;
-    /* Removed max-width restriction to allow the container to stretch fully */
 }
 
 .form-control.formInput {
-    font-size: 15px; /* Restored original font size */
+    font-size: 15px;
     border: none;
-    border-bottom: 1px solid #767676; /* Restored original border-bottom size */
-    margin-bottom: 30px; /* Restored original element layout gaps */
+    border-bottom: 1px solid #767676;
+    margin-bottom: 30px;
     resize: none;
-    height: 60px; /* Restored original field height */
+    height: 60px; 
     padding: 0;
     outline: 0;
     border-radius: 0;
@@ -128,7 +127,6 @@
     border-bottom-color: #147efb;
 }
 
-/* Restored original viewport scaling for your message textbox */
 textarea.form-control.formInput {
     height: 20vh !important; 
     padding-top: 1rem;
@@ -139,18 +137,17 @@ textarea.form-control.formInput {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: -20px; /* Pulls the error up gracefully into the original 30px margin block */
+    margin-top: -20px;
     margin-bottom: 20px;
     font-weight: 500;
 }
 
-/* Restored original Submit button shape and constraints */
 .submit-btn {
     width: 100%;
-    height: 50px; /* Restored original height */
+    height: 50px;
     font-weight: bold;
-    font-size: medium; /* Restored original size property token */
-    background-color: #147efb !important; /* Changes the resting color back to blue */
+    font-size: medium;
+    background-color: #147efb !important;
     color: white !important;
     border: none !important;
     cursor: pointer;
@@ -161,7 +158,7 @@ textarea.form-control.formInput {
 }
 
 .submit-btn:hover {
-    background-color: #2d2e32 !important; /* Changes the hover state to dark gray */
+    background-color: #2d2e32 !important;
 }
 
 .submit-btn:active {
@@ -169,7 +166,7 @@ textarea.form-control.formInput {
 }
 
 /* ==========================================================================
-   4. CONSOLIDATED RESPONSIVE MEDIA QUERIES
+   CONSOLIDATED RESPONSIVE MEDIA QUERIES
    ========================================================================= */
 @media (max-width: 1020px) {
     .contact {

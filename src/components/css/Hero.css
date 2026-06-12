@@ -1,14 +1,14 @@
 /* ==========================================================================
-   1. HERO MAIN SECTOR BLOCK
+   HERO MAIN SECTOR BLOCK
    ========================================================================== */
 .hero {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 82vh; /* Allocated precisely to leave room for the 18vh skills block */
-    min-height: 54rem; /* Prevents text crowding on short laptop windows */
+    height: 82vh;
+    min-height: 54rem;
     background-color: #f9f9f9;
-    padding-top: 8rem; /* Clear navigation header space */
+    padding-top: 8rem;
     position: relative;
     box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Beautifully centers your profile contents vertically */
+    justify-content: center;
 }
 
 .hero-main {
@@ -29,7 +29,7 @@
 }
 
 /* ==========================================================================
-   2. TYPOGRAPHY & TEXT STRUCTURAL BLOCKS
+   TYPOGRAPHY & TEXT STRUCTURAL BLOCKS
    ========================================================================== */
 .hero-text {
     display: flex;
@@ -88,7 +88,7 @@
 }
 
 /* ==========================================================================
-   3. MORPHING HEADSHOT CONTAINER
+   MORPHING HEADSHOT CONTAINER
    ========================================================================== */
 .hero-img {
     background-image: url("/src/components/images/Headshot.jpg");
@@ -113,12 +113,12 @@
 }
 
 /* ==========================================================================
-   4. STREAMLINED RESPONSIVE LAYOUT CONSTRAINTS
+   STREAMLINED RESPONSIVE LAYOUT CONSTRAINTS
    ========================================================================== */
 @media (max-width: 900px) {
     .hero {
         padding-top: 11rem;
-        height: auto; /* Drops strict full screen on mobile so stacked contents flow naturally */
+        height: auto;
         min-height: auto;
     }
 

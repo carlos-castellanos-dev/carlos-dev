@@ -2,31 +2,26 @@
    FIXED FLOATING ACTION BUTTON (REFACTORED CONFLICTS)
    ========================================================================== */
 .resume-btn {
-    position: fixed; /* Bound directly to viewport screen corners */
-    bottom: 3rem;    /* Swapped to rem layout coordinates for zoom stability */
+    position: fixed;
+    bottom: 3rem;
     left: 3rem;
-    z-index: 999;    /* Ensure it floats above footers and backgrounds */
-    
+    z-index: 999; 
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
     background-color: #ffffff;
     color: #147efb;
     border: 0.2rem solid #147efb;
-    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.15); /* Sleek shadow depth */
-    
-    /* Forces all Tabler icons to remain perfectly centered automatically */
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    
     text-decoration: none;
     cursor: pointer;
     animation: jittery 4s infinite ease-in-out;
     transition: transform 0.2s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Clear, premium interactive transformations */
 .resume-btn:hover {
     animation: heartbeat 1.2s infinite ease-in-out;
     background-color: #147efb;

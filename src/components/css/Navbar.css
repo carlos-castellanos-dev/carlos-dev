@@ -25,7 +25,6 @@ nav .logo {
     margin: 0;
 }
 
-/* Fixes the desktop navbar list container and cleans default bullet marks */
 nav ul {
     display: flex;
     list-style: none;
@@ -51,9 +50,8 @@ nav ul a:hover {
     color: #147efb;
 }
 
-/* Target the responsive hamburger container wrapper link block precisely */
 .mobile-hamburger__trigger {
-    display: none; /* Keeps it completely hidden on standard desktop displays */
+    display: none;
     cursor: pointer;
     color: #2d2e32;
     align-items: center;
@@ -116,12 +114,11 @@ nav ul a:hover {
    RESPONSIVE VIEWPORT MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 900px) {
-    /* Hide the text array links container box on standard tablets and mobile rows */
     nav ul {
         display: none; 
     }
 
     .mobile-hamburger__trigger {
-        display: inline-flex; /* Displays your clean trigger asset neatly */
+        display: inline-flex;
     }
 }

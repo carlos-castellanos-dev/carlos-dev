@@ -7,13 +7,12 @@ footer {
     width: 100%;
 }
 
-/* Explicit font token variables keep typography consistent */
 footer h4 {
     color: #ffffff;
     font-size: 1.6rem;
-    line-height: 1.6; /* Prevents text row compression when breaking lines */
+    line-height: 1.6;
     font-weight: 600;
-    margin: 0; /* Clears hidden margin blocks */
+    margin: 0;
 }
 
 .footerc {
@@ -30,14 +29,13 @@ footer h4 {
 
 .footerc__socials a {
     color: #ffffff;
-    display: inline-flex; /* Ensures the bounding box wraps the Tabler icon precisely */
-    /* Transition belongs on the base element to ensure smooth easing on exit */
+    display: inline-flex;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; 
 }
 
 .footerc__socials a:hover {
-    color: #147efb; /* Swaps white out for your brand signature blue */
-    transform: scale(1.15); /* Sleek, uniform sizing scale jump */
+    color: #147efb;
+    transform: scale(1.15);
 }
 
 /* ==========================================================================
@@ -45,13 +43,13 @@ footer h4 {
    ========================================================================== */
 @media (max-width: 550px) {
     .footerc {
-        flex-direction: column; /* Locks alignment down to a stable vertical column stack */
+        flex-direction: column;
         justify-content: center;
         gap: 2.5rem;
         text-align: center;
     }
     
     footer h4 br {
-        display: none; /* Destroys the line break to give mobile screens full sentence length */
+        display: none;
     }
 }

@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 18vh; /* Matches the viewport handoff perfectly */
-    min-height: 14rem; /* Slightly increased to prevent squishing on low-res screens */
+    height: 18vh;
+    min-height: 14rem;
     position: relative;
     box-sizing: border-box;
 }
@@ -50,16 +50,14 @@
 }
 
 .skills-main ul li img {
-    transition: transform 0.3s ease-in-out; /* Smooth slide animation */
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-/* Beautiful hover action that moves up cleanly without cutting off */
 .skills-main ul li img:hover {
     transform: translateY(-10px); 
 }
 
-/* FIX: Increased height and padding to give icons an internal bumper area to animate into */
 .logos {
     overflow: hidden;
     white-space: nowrap;
@@ -67,8 +65,8 @@
     width: 50vw;
     display: flex;
     align-items: center;
-    height: 130px; /* Bumped up from 100px to accommodate the vertical translation */
-    padding-top: 15px; /* Creates internal overhead clearance for overflow:hidden */
+    height: 130px;
+    padding-top: 15px;
 }
 
 .logos-slide {
